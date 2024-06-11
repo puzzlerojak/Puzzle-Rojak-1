@@ -1,0 +1,559 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.com/team/NullPointerException by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 08:29:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>NullPointerException</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a class="selected-tab" href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a> -->
+            </div>
+            <div class="top-left-actions">
+                
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+.chart {
+    width: 100%;
+    height: 82px;
+    transform: scaleY(-1);
+    margin-bottom: 24px;
+}
+
+.baz {
+    fill: rgba(180, 160, 140, 0.3);
+}
+
+.area {
+    fill: rgb(180, 220, 150);
+}
+
+.bar {
+    stroke: rgba(248, 188, 78, 0.5);
+    stroke-width: 0.5%;
+    fill: none;
+}
+
+.meta {
+    font-style: italic;
+}
+
+.team-members {
+    margin-top: 24px;
+}
+
+@media (min-width: 550px) {
+    .team-members {
+        margin-top: 0;
+    }
+}
+
+.team-member-controls {
+    margin-top: 8px;
+    line-height: 36px;
+}
+
+.team-info-panel h4 {
+    margin-bottom: 0;
+}
+
+.free {
+    color: #aaa;
+}
+
+.free td:last-child:before {
+    content: "(";
+}
+
+.free td:last-child:after {
+    content: ")";
+}
+</style>
+
+<h1>NullPointerException</h1>
+
+<main>
+    <div class="team-info-panel">
+        <div class="row">
+            <div class="six columns">
+                <h4>Stats</h4>
+                <div class="stat-entry">Rank: <span class="stat-value">60</span></div>
+                <div class="stat-entry">Puzzles solved: <span class="stat-value">30</span></div>
+                
+            </div>
+            <div class="six columns">
+                <div class="team-members">
+                    <h4>Team Members:</h4>
+                    <div class="stat-entry">
+                        
+                        Vicki, 
+                        
+                        Darrin, 
+                        
+                        Kim, 
+                        
+                        Max, 
+                        
+                        Tiffany
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <svg class="chart" viewbox="0 0 777600.0 41" preserveAspectRatio="none">
+        <path d="M 0 0 L 777600.0 0 L 777600.0 41 L 0 41" class="baz"></path>
+        <path d="M 777600.0 0 L 0 0
+        
+        L 0.0 1
+        L 558.603429 1
+        
+        L 558.603429 2
+        L 5132.679362 2
+        
+        L 5132.679362 3
+        L 15354.730269 3
+        
+        L 15354.730269 4
+        L 34183.547575 4
+        
+        L 34183.547575 5
+        L 35227.318104 5
+        
+        L 35227.318104 6
+        L 89766.698842 6
+        
+        L 89766.698842 7
+        L 91714.23033 7
+        
+        L 91714.23033 8
+        L 94368.259505 8
+        
+        L 94368.259505 9
+        L 107936.999001 9
+        
+        L 107936.999001 10
+        L 112749.276854 10
+        
+        L 112749.276854 11
+        L 116276.190373 11
+        
+        L 116276.190373 12
+        L 171090.096473 12
+        
+        L 171090.096473 13
+        L 174664.146855 13
+        
+        L 174664.146855 14
+        L 258197.400178 14
+        
+        L 258197.400178 15
+        L 258664.73756 15
+        
+        L 258664.73756 16
+        L 331885.277396 16
+        
+        L 331885.277396 17
+        L 349136.401707 17
+        
+        L 349136.401707 18
+        L 356362.377502 18
+        
+        L 356362.377502 19
+        L 424031.259689 19
+        
+        L 424031.259689 20
+        L 432564.573235 20
+        
+        L 432564.573235 21
+        L 441060.634594 21
+        
+        L 441060.634594 22
+        L 446725.894958 22
+        
+        L 446725.894958 23
+        L 500769.135994 23
+        
+        L 500769.135994 24
+        L 535755.691665 24
+        
+        L 535755.691665 25
+        L 578616.89548 25
+        
+        L 578616.89548 26
+        L 586651.556566 26
+        
+        L 586651.556566 27
+        L 595334.684213 27
+        
+        L 595334.684213 28
+        L 596038.551827 28
+        
+        L 596038.551827 29
+        L 597879.226721 29
+        
+        L 597879.226721 30
+        L 598013.644825 30
+        
+        L 598013.644825 31
+        L 777600.0 31
+        
+        " class="area"></path>
+        
+        <path d="M 558.603429 0 L 558.603429 41" class="bar"></path>
+        
+        <path d="M 586651.556566 0 L 586651.556566 41" class="bar"></path>
+        
+        <path d="M 595334.684213 0 L 595334.684213 41" class="bar"></path>
+        
+        <path d="M 596038.551827 0 L 596038.551827 41" class="bar"></path>
+        
+        <path d="M 597879.226721 0 L 597879.226721 41" class="bar"></path>
+        
+        <path d="M 598013.644825 0 L 598013.644825 41" class="bar"></path>
+        
+    </svg>
+    <table class="sortable gph-list-table">
+        <col style="width: 30%">
+        <col style="width: 15%">
+        <col style="width: 20%">
+        <col style="width: 15%">
+        <col style="width: 20%">
+        <tr>
+            <th>Puzzle</th>
+            <th>Incorrect guesses</th>
+            <th>Unlock time (UTC)</th>
+            <th>Time to solve</th>
+            <th>Solve time (UTC)</th>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Prepuzzle: Where&#x27;s Waldo?" class="meta"><a href="../puzzle/prepuzzle.html">Prepuzzle: Where&#x27;s Waldo?</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-17-2021 23:43:49">Dec 17, 2021 11:43:49 PM</td>
+            <td sorttable_customkey="1529.55386">25m 30s</td>
+            <td sorttable_customkey="12-18-2021 00:09:18">Dec 18, 2021 12:09:18 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Dock"><a href="../puzzle/dock.html">Dock</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 00:09:18">Dec 18, 2021 12:09:18 AM</td>
+            <td sorttable_customkey="4573.702066">1h 16m 14s</td>
+            <td sorttable_customkey="12-18-2021 01:25:32">Dec 18, 2021 01:25:32 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Restaurant"><a href="../puzzle/restaurant.html">Restaurant</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 00:09:18">Dec 18, 2021 12:09:18 AM</td>
+            <td sorttable_customkey="14795.750438">4h 6m 36s</td>
+            <td sorttable_customkey="12-18-2021 04:15:54">Dec 18, 2021 04:15:54 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Nokia Shop"><a href="../puzzle/nokia-shop.html">Nokia Shop</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 04:15:55">Dec 18, 2021 04:15:55 AM</td>
+            <td sorttable_customkey="18828.522684">5h 13m 49s</td>
+            <td sorttable_customkey="12-18-2021 09:29:43">Dec 18, 2021 09:29:43 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Go-Karts"><a href="../puzzle/go-karts.html">Go-Karts</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 04:15:55">Dec 18, 2021 04:15:55 AM</td>
+            <td sorttable_customkey="19872.290031">5h 31m 12s</td>
+            <td sorttable_customkey="12-18-2021 09:47:07">Dec 18, 2021 09:47:07 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Sandwich Bar"><a href="../puzzle/sandwich-bar.html">Sandwich Bar</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 00:09:18">Dec 18, 2021 12:09:18 AM</td>
+            <td sorttable_customkey="89207.723982">24h 46m 48s</td>
+            <td sorttable_customkey="12-19-2021 00:56:06">Dec 19, 2021 12:56:06 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Sea Cave"><a href="../puzzle/sea-cave.html">Sea Cave</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 09:47:07">Dec 18, 2021 09:47:07 AM</td>
+            <td sorttable_customkey="56486.671168">15h 41m 27s</td>
+            <td sorttable_customkey="12-19-2021 01:28:34">Dec 19, 2021 01:28:34 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Haunted House"><a href="../puzzle/haunted-house.html">Haunted House</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 00:56:07">Dec 19, 2021 12:56:07 AM</td>
+            <td sorttable_customkey="4601.253061">1h 16m 41s</td>
+            <td sorttable_customkey="12-19-2021 02:12:48">Dec 19, 2021 02:12:48 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Shallow Waters"><a href="../puzzle/shallow-waters.html">Shallow Waters</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 01:28:34">Dec 19, 2021 01:28:34 AM</td>
+            <td sorttable_customkey="16222.497931">4h 30m 22s</td>
+            <td sorttable_customkey="12-19-2021 05:58:56">Dec 19, 2021 05:58:56 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Internet Café"><a href="../puzzle/internet-cafe.html">Internet Café</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 02:12:48">Dec 19, 2021 02:12:48 AM</td>
+            <td sorttable_customkey="18380.635391">5h 6m 21s</td>
+            <td sorttable_customkey="12-19-2021 07:19:09">Dec 19, 2021 07:19:09 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Merry-Go-Round"><a href="../puzzle/merry-go-round.html">Merry-Go-Round</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 09:29:44">Dec 18, 2021 09:29:44 AM</td>
+            <td sorttable_customkey="82092.099442">22h 48m 12s</td>
+            <td sorttable_customkey="12-19-2021 08:17:56">Dec 19, 2021 08:17:56 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Jetty Creatures"><a href="../puzzle/jetty-creatures.html">Jetty Creatures</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 05:58:57">Dec 19, 2021 05:58:57 AM</td>
+            <td sorttable_customkey="63152.846058">17h 32m 33s</td>
+            <td sorttable_customkey="12-19-2021 23:31:30">Dec 19, 2021 11:31:30 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Baywatch"><a href="../puzzle/baywatch.html">Baywatch</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 23:31:30">Dec 19, 2021 11:31:30 PM</td>
+            <td sorttable_customkey="3573.663779">59m 34s</td>
+            <td sorttable_customkey="12-20-2021 00:31:04">Dec 20, 2021 12:31:04 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Animal Show"><a href="../puzzle/animal-show.html">Animal Show</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-20-2021 00:31:04">Dec 20, 2021 12:31:04 AM</td>
+            <td sorttable_customkey="83532.853857">23h 12m 13s</td>
+            <td sorttable_customkey="12-20-2021 23:43:17">Dec 20, 2021 11:43:17 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Battleships"><a href="../puzzle/battleships.html">Battleships</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 08:17:56">Dec 19, 2021 08:17:56 AM</td>
+            <td sorttable_customkey="142388.265249">39h 33m 8s</td>
+            <td sorttable_customkey="12-20-2021 23:51:04">Dec 20, 2021 11:51:04 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Message in a Bottle"><a href="../puzzle/message-in-a-bottle.html">Message in a Bottle</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-20-2021 23:43:17">Dec 20, 2021 11:43:17 PM</td>
+            <td sorttable_customkey="73687.499277">20h 28m 7s</td>
+            <td sorttable_customkey="12-21-2021 20:11:25">Dec 21, 2021 08:11:25 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Phone Booth"><a href="../puzzle/phone-booth.html">Phone Booth</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-19-2021 07:19:09">Dec 19, 2021 07:19:09 AM</td>
+            <td sorttable_customkey="236386.76838">65h 39m 47s</td>
+            <td sorttable_customkey="12-22-2021 00:58:56">Dec 22, 2021 12:58:56 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Seashells"><a href="../puzzle/seashells.html">Seashells</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-22-2021 00:58:56">Dec 22, 2021 12:58:56 AM</td>
+            <td sorttable_customkey="7225.721543">2h 0m 26s</td>
+            <td sorttable_customkey="12-22-2021 02:59:22">Dec 22, 2021 02:59:22 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="School"><a href="../puzzle/school.html">School</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-20-2021 23:51:05">Dec 20, 2021 11:51:05 PM</td>
+            <td sorttable_customkey="165366.033837">45h 56m 6s</td>
+            <td sorttable_customkey="12-22-2021 21:47:11">Dec 22, 2021 09:47:11 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Refreshment Stand"><a href="../puzzle/refreshment-stand.html">Refreshment Stand</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-22-2021 21:47:11">Dec 22, 2021 09:47:11 PM</td>
+            <td sorttable_customkey="8532.973625">2h 22m 13s</td>
+            <td sorttable_customkey="12-23-2021 00:09:24">Dec 23, 2021 12:09:24 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Swimming Area"><a href="../puzzle/swimming-area.html">Swimming Area</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 00:09:24">Dec 23, 2021 12:09:24 AM</td>
+            <td sorttable_customkey="8495.80459">2h 21m 36s</td>
+            <td sorttable_customkey="12-23-2021 02:31:00">Dec 23, 2021 02:31:00 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Media Studio"><a href="../puzzle/media-studio.html">Media Studio</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 02:31:00">Dec 23, 2021 02:31:00 AM</td>
+            <td sorttable_customkey="5664.951524">1h 34m 25s</td>
+            <td sorttable_customkey="12-23-2021 04:05:25">Dec 23, 2021 04:05:25 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Concert Stage"><a href="../puzzle/concert-stage.html">Concert Stage</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-21-2021 20:11:25">Dec 21, 2021 08:11:25 PM</td>
+            <td sorttable_customkey="168883.576531">46h 54m 44s</td>
+            <td sorttable_customkey="12-23-2021 19:06:09">Dec 23, 2021 07:06:09 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Under the Shade"><a href="../puzzle/under-the-shade.html">Under the Shade</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-22-2021 02:59:22">Dec 22, 2021 02:59:22 AM</td>
+            <td sorttable_customkey="179393.011502">49h 49m 53s</td>
+            <td sorttable_customkey="12-24-2021 04:49:15">Dec 24, 2021 04:49:15 AM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Roller Coasters"><a href="../puzzle/roller-coasters.html">Roller Coasters</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-18-2021 01:25:32">Dec 18, 2021 01:25:32 AM</td>
+            <td sorttable_customkey="573483.986942">159h 18m 4s</td>
+            <td sorttable_customkey="12-24-2021 16:43:36">Dec 24, 2021 04:43:36 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Meta 3: On the Beach" class="meta"><a href="../puzzle/meta3.html">Meta 3: On the Beach</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 04:05:26">Dec 23, 2021 04:05:26 AM</td>
+            <td sorttable_customkey="139925.403708">38h 52m 5s</td>
+            <td sorttable_customkey="12-24-2021 18:57:31">Dec 24, 2021 06:57:31 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Meta 1: Fairground" class="meta"><a href="../puzzle/meta1.html">Meta 1: Fairground</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 04:05:26">Dec 23, 2021 04:05:26 AM</td>
+            <td sorttable_customkey="148608.540054">41h 16m 49s</td>
+            <td sorttable_customkey="12-24-2021 21:22:14">Dec 24, 2021 09:22:14 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Runaround: Where&#x27;s Waldo?" class="meta"><a href="../puzzle/runaround.html">Runaround: Where&#x27;s Waldo?</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 04:05:26">Dec 23, 2021 04:05:26 AM</td>
+            <td sorttable_customkey="149312.396877">41h 28m 32s</td>
+            <td sorttable_customkey="12-24-2021 21:33:58">Dec 24, 2021 09:33:58 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Meta 2: In Town" class="meta"><a href="../puzzle/meta2.html">Meta 2: In Town</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-23-2021 04:05:26">Dec 23, 2021 04:05:26 AM</td>
+            <td sorttable_customkey="151153.079673">41h 59m 13s</td>
+            <td sorttable_customkey="12-24-2021 22:04:39">Dec 24, 2021 10:04:39 PM</td>
+        </tr>
+        
+        <tr>
+            <td sorttable_customkey="Meta Meta: Where&#x27;s Waldo?" class="meta"><a href="../puzzle/metameta.html">Meta Meta: Where&#x27;s Waldo?</a></td>
+            <td>0</td>
+            <td sorttable_customkey="12-24-2021 22:04:39">Dec 24, 2021 10:04:39 PM</td>
+            <td sorttable_customkey="134.124599">2m 14s</td>
+            <td sorttable_customkey="12-24-2021 22:06:53">Dec 24, 2021 10:06:53 PM</td>
+        </tr>
+        
+    </table>
+    
+    
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.com/team/NullPointerException by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 08:29:59 GMT -->
+</html>

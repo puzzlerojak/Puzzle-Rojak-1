@@ -1,0 +1,666 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.com/solution/shallow-waters by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 07:58:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Shallow Waters</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a> -->
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/shallow-waters.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Shallow Waters
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">FLIPPROOF</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+aki
+
+    </h4>
+
+    
+    <style>
+.shallowwaters-grid {
+  table-layout: fixed;
+    margin: 0 auto 2em;
+}
+
+.shallowwaters-grid td {
+  width: 2.45rem;
+  line-height: 2.75rem;
+  text-align: center;
+    border: 1px solid black;
+    padding: 0.5rem 0.5rem;
+}
+
+.shallowwaters-grid td.lc {
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.shallowwaters-grid td.tr {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+}
+
+.shallowwaters-grid td.l {
+  border-left: 3px solid black;
+}
+
+.shallowwaters-grid td.r {
+  border-right: 3px solid black;
+}
+
+.shallowwaters-grid td.u {
+  border-top: 3px solid black;
+}
+
+.shallowwaters-grid td.d {
+  border-bottom: 3px solid black;
+}
+
+.shallowwaters-grid td.y {
+  background-color: yellow;
+}
+</style>
+
+<p>Based on the flavor text and reading of the rules, we infer than pool noodles and donuts respectively refer to 1&apos;s and 0&apos;s, indicating that binary is relevant here. Evidently, the first step is to solve the logic puzzle, which has the following solution (0&apos;s and 1&apos;s used to represent donuts and noodles).</p>
+
+<p><center><div><table class="shallowwaters-grid"><tr><td class="lc tr"></td><td class="tr">5</td><td class="tr">6</td><td class="tr">4</td><td class="tr">11</td><td class="tr">5</td><td class="tr">10</td><td class="tr">5</td><td class="tr">6</td><td class="tr">7</td><td class="tr">7</td><td class="tr">9</td><td class="tr">6</td><td class="tr">4</td><td class="tr">6</td><td class="tr">6</td><td class="tr">7</td><td class="tr">7</td><td class="tr">10</td><td class="tr">9</td><td class="tr">5</td><td class="tr">7</td></tr><tr><td class="lc">11</td><td class="u l d">0</td><td class="u r">0</td><td class="u l d">1</td><td class="u">1</td><td class="u r d">1</td><td class="u d l r">0</td><td class="u l d">1</td><td class="u r">1</td><td class="u l d">1</td><td class="u d">1</td><td class="u r">1</td><td class="u l d">0</td><td class="u r y">0</td><td class="u l r y">1</td><td class="u l d y">0</td><td class="u d y">0</td><td class="u r y">0</td><td class="u l">1</td><td class="u r d">1</td><td class="u l d">0</td><td class="u r d y">0</td></tr><tr><td class="lc">11</td><td class="u l r y">0</td><td class="l r d y">0</td><td class="u l r y">0</td><td class="l r d y">1</td><td class="l r u">0</td><td class="l r u">1</td><td class="l r u d">0</td><td class="l r d">1</td><td class="u l">0</td><td class="u r d y">0</td><td class="l d y">1</td><td class="u r d y">1</td><td class="l r d y">0</td><td class="l r d y">1</td><td class="u l d">1</td><td class="u r">1</td><td class="l r">0</td><td class="l r">1</td><td class="l r u d y">0</td><td class="u l d y">1</td><td class="u r y">1</td></tr><tr><td class="lc">9</td><td class="l r d y">0</td><td class="u l r y">1</td><td class="l">0</td><td class="u d">0</td><td class="r">0</td><td class="l">1</td><td class="u r d">1</td><td class="u l">0</td><td class="r d">0</td><td class="u l">0</td><td class="u r d">0</td><td class="u l d">1</td><td class="u r">1</td><td class="u d l r">0</td><td class="u d l r">0</td><td class="l r d">1</td><td class="l r d">0</td><td class="l d">1</td><td class="u r d">1</td><td class="u l r">0</td><td class="r d">1</td></tr><tr><td class="lc">10</td><td class="u d l">1</td><td class="r d">1</td><td class="l r d">0</td><td class="u l r">1</td><td class="l r d y">0</td><td class="l r y">1</td><td class="l u y">0</td><td class="d r y">0</td><td class="r u l y">1</td><td class="l r d">0</td><td class="l r u">1</td><td class="l r u y">0</td><td class="l r d y">1</td><td class="l u d y">1</td><td class="r u d y">1</td><td class="l r u y">0</td><td class="u d l r">1</td><td class="l u d">0</td><td class="u d">0</td><td>0</td><td class="u d r">0</td></tr><tr><td class="lc">10</td><td class="u d l r y">0</td><td class="u l r y">0</td><td class="u d l y">1</td><td class="r y">1</td><td class="u d l y">1</td><td class="r">1</td><td class="l r d">0</td><td class="u l d">1</td><td class="d">1</td><td class="u d">1</td><td class="r d">1</td><td class="l r">0</td><td class="u d l r">0</td><td class="u d l r">0</td><td class="u d l r">0</td><td class="l r">0</td><td class="l u d">0</td><td class="u d r">0</td><td class="u l r">1</td><td class="d l r">0</td><td class="u l r">1</td></tr><tr><td class="lc">7</td><td class="l u d">0</td><td class="r d">0</td><td class="l r u">0</td><td class="l r">1</td><td class="l u r">0</td><td class="l r">1</td><td class="l u d">0</td><td class="r u d">0</td><td class="l u d">0</td><td class="u">0</td><td class="r u d">0</td><td class="l d">0</td><td class="u d r">0</td><td class="u d r l y">1</td><td class="l u d y">0</td><td class="r y">0</td><td class="l u d y">1</td><td class="u y">1</td><td class="r d">1</td><td class="l r u">0</td><td class="l r">1</td></tr><tr><td class="lc">10</td><td class="l u r">1</td><td class="l u d y">0</td><td class="r d y">0</td><td class="l r d y">1</td><td class="l r y">0</td><td class="l y">1</td><td class="u r d">1</td><td class="l u d">1</td><td class="u r y">1</td><td class="l r d y">0</td><td class="u l d y">1</td><td class="u r y">1</td><td class="u l y">0</td><td class="u d">0</td><td class="u r d">0</td><td class="l d">0</td><td class="u r d">0</td><td class="l r">1</td><td class="l u d">0</td><td class="r">0</td><td class="l r d">1</td></tr><tr><td class="lc">13</td><td class="l">1</td><td class="u r d">1</td><td class="u l r">1</td><td class="l u d">0</td><td class="r d">0</td><td class="l r d">1</td><td class="u l">0</td><td class="u d r">0</td><td class="l">1</td><td class="u d r">1</td><td class="u d l r">0</td><td class="l r d">1</td><td class="l r">0</td><td class="u l d">1</td><td class="u d">1</td><td class="u d">1</td><td class="u">1</td><td class="d">1</td><td class="u r">1</td><td class="l d y">0</td><td class="u d r y">0</td></tr><tr><td class="lc">10</td><td class="l r d y">1</td><td class="u d l r y">0</td><td class="l d y">1</td><td class="u">1</td><td class="u r d">1</td><td class="u d l">0</td><td class="r d">0</td><td class="u l r">0</td><td class="d l r">1</td><td class="u d l r">0</td><td class="u l r">1</td><td class="u d l">0</td><td class="r d">0</td><td class="l u">0</td><td class="u d">0</td><td class="u r d">0</td><td class="l d r">1</td><td class="u d l r y">0</td><td class="l d y">1</td><td class="u y">1</td><td class="u d r y">1</td></tr><tr><td class="lc">10</td><td class="u l r y">0</td><td class="u d l r">1</td><td class="u l r">0</td><td class="d l r">1</td><td class="u l r">0</td><td class="u l">1</td><td class="u r d">1</td><td class="l d y">0</td><td class="u r y">0</td><td class="u l y">1</td><td class="r d y">1</td><td class="u l y">0</td><td class="u d">0</td><td class="r d">0</td><td class="u l d">1</td><td class="u r d">1</td><td class="u d l r">0</td><td class="u d l r">1</td><td class="u l r">0</td><td class="l r">1</td><td class="u l r">0</td></tr><tr><td class="lc">5</td><td class="l r">0</td><td class="u l d">0</td><td class="r">0</td><td class="u d l">0</td><td class="r d">0</td><td class="l r d">1</td><td class="u d l r">0</td><td class="u l r">1</td><td class="l r d">0</td><td class="l r d">1</td><td class="u l r">0</td><td class="l r d">0</td><td class="u l r">0</td><td class="u l">0</td><td class="u d">0</td><td class="u r">0</td><td class="u l r">1</td><td class="u l d">0</td><td class="r d">0</td><td class="l r d">1</td><td class="l r">0</td></tr><tr><td class="lc">8</td><td class="l d">0</td><td class="u r d">0</td><td class="l r">0</td><td class="u l r">1</td><td class="u l d">0</td><td class="u r d">0</td><td class="u l d">1</td><td class="r d">1</td><td class="u l r">0</td><td class="u l r">0</td><td class="l r d">0</td><td class="u l r">1</td><td class="l r d">0</td><td class="l r d">0</td><td class="u l d r">1</td><td class="l r d">0</td><td class="l d">1</td><td class="u">1</td><td class="u d r">1</td><td class="u l d">0</td><td class="r d">0</td></tr><tr><td class="lc">7</td><td class="l u d">1</td><td class="r u d">1</td><td class="l d r">0</td><td class="l d r">1</td><td class="l u d">0</td><td class="r u d">0</td><td class="l u">0</td><td class="u d r">0</td><td class="l r">0</td><td class="l d r">0</td><td class="u l">1</td><td class="r d">1</td><td class="u d l">0</td><td class="u d">0</td><td class="u d r">0</td><td class="u l r">1</td><td class="u d l r">0</td><td class="l r d">1</td><td class="l u d">0</td><td class="u">0</td><td class="u d r">0</td></tr><tr><td class="lc">11</td><td class="u l r">0</td><td class="l u d">0</td><td class="u">0</td><td class="u d r">0</td><td class="u l">1</td><td class="u d r">1</td><td class="l r">0</td><td class="u l r">0</td><td class="d l r">0</td><td class="u l r">1</td><td class="d l r">1</td><td class="u l r y">0</td><td class="u l y">1</td><td class="u d r y">1</td><td class="l u d y">1</td><td class="y">1</td><td class="u r d">1</td><td class="u d l r">0</td><td class="l r u y">1</td><td class="l r d y">0</td><td class="u d l r y">1</td></tr><tr><td class="lc">10</td><td class="d l r y">0</td><td class="u d l r y">1</td><td class="d l r">0</td><td class="l u d">1</td><td class="r d">1</td><td class="l u d">0</td><td class="r d">0</td><td class="l r d">0</td><td class="u d l">1</td><td class="r d y">1</td><td class="u l d y">0</td><td class="r d y">0</td><td class="l r d y">1</td><td class="u l d y">0</td><td class="u r d">0</td><td class="l r d">1</td><td class="u d l r">0</td><td class="u d l">1</td><td class="d">1</td><td class="u d r">1</td><td class="u d l r">0</td></tr></table></div></center><p>We next notice that we are given highlighted cells in yellow. Based on the pattern of cells, we notice that when read in row-major order, the highlighted cells create distinct sets of 5-bit binary strings. This gives the following sets of binary strings.</p></p>
+<table>
+<thead>
+<tr>
+<th>Binary string</th>
+<th>Decimal number</th>
+<th>Letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01000</td>
+<td>8</td>
+<td>H</td>
+</tr>
+<tr>
+<td>00001</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>01101</td>
+<td>13</td>
+<td>M</td>
+</tr>
+<tr>
+<td>01101</td>
+<td>13</td>
+<td>M</td>
+</tr>
+<tr>
+<td>01001</td>
+<td>9</td>
+<td>I</td>
+</tr>
+<tr>
+<td>01110</td>
+<td>14</td>
+<td>N</td>
+</tr>
+<tr>
+<td>00111</td>
+<td>7</td>
+<td>G</td>
+</tr>
+<tr>
+<td>10011</td>
+<td>19</td>
+<td>S</td>
+</tr>
+<tr>
+<td>00101</td>
+<td>5</td>
+<td>E</td>
+</tr>
+<tr>
+<td>10110</td>
+<td>22</td>
+<td>V</td>
+</tr>
+<tr>
+<td>00101</td>
+<td>5</td>
+<td>E</td>
+</tr>
+<tr>
+<td>01110</td>
+<td>14</td>
+<td>N</td>
+</tr>
+<tr>
+<td>00110</td>
+<td>6</td>
+<td>F</td>
+</tr>
+<tr>
+<td>01111</td>
+<td>15</td>
+<td>O</td>
+</tr>
+<tr>
+<td>10101</td>
+<td>21</td>
+<td>U</td>
+</tr>
+<tr>
+<td>10010</td>
+<td>18</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<p>Translating the binary we obtain the cluephrase HAMMING SEVEN FOUR, referencing an encoding technique which uses Hamming codes to encode a 4-bit string using a 7-bit string. The advantage of Hamming codes is that they are error-correcting. In particular, Hamming(7,4) is single-error-correcting, which means that if one of the seven bits are somehow flipped, the resulting string gives us all the information to find the flipped bit, and correct the error.</p>
+
+<p>Once we have obtained this cluephrase, we reference the flavor text which tells us that the grid actually encodes a message in Hamming(7,4). Combined with the row-major method of reading the cluephrase previously, we are prompted now to treat the entire grid as one long binary string.</p>
+
+<p>After looking at a couple of 7-bit strings, we realize that these strings all have errors! The next step is, of course, to correct the received message and recover the original sent message. Once we have corrected each 7-bit string, we can obtain the original 4-bit message from each one. Next, we observe that the next set of boxes at the bottom tell us to convert the 45 bitstrings of length 7 to 36 bitstrings of length 5. Stringing together the 45 sets of 4-bit strings and resegmenting them into 36 sets of 5 bits, we are able to read off letters, which gives us the second cluephrase, READ CORRECTED BITS AND EXTRACT THE ANSWER. (The given checksums indicate the sum of bits for each of the 36 letters.)</p>
+
+<p>Finally, we should look at the corrected bits in order, and concatenate those to read off the sets of 5 bits instead. Doing so tells us what pool noodles, pool donuts and Hamming codes have in common &ndash; that is, they are <strong>FLIPPROOF</strong>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Errored 7-bit string</th>
+<th>Errored bit position</th>
+<th>Correct 7-bit string</th>
+<th>4-bit message</th>
+<th>Corrected bit</th>
+<th>Extracted letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0011101</td>
+<td>5</td>
+<td>0011001</td>
+<td>1001</td>
+<td>0</td>
+<td>F</td>
+</tr>
+<tr>
+<td>1111001</td>
+<td>3</td>
+<td>1101001</td>
+<td>0001</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0001100</td>
+<td>1</td>
+<td>1001100</td>
+<td>0100</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0001010</td>
+<td>2</td>
+<td>0101010</td>
+<td>0010</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>1001101</td>
+<td>7</td>
+<td>1001100</td>
+<td>0100</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1101011</td>
+<td>6</td>
+<td>1101001</td>
+<td>0001</td>
+<td>0</td>
+<td>L</td>
+</tr>
+<tr>
+<td>0100011</td>
+<td>3</td>
+<td>0110011</td>
+<td>1011</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0000110</td>
+<td>3</td>
+<td>0010110</td>
+<td>1110</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0101101</td>
+<td>4</td>
+<td>0100101</td>
+<td>0101</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1101010</td>
+<td>1</td>
+<td>0101010</td>
+<td>0010</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0101011</td>
+<td>7</td>
+<td>0101010</td>
+<td>0010</td>
+<td>0</td>
+<td>I</td>
+</tr>
+<tr>
+<td>1010000</td>
+<td>2</td>
+<td>1110000</td>
+<td>1000</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0011110</td>
+<td>4</td>
+<td>0010110</td>
+<td>1110</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1111000</td>
+<td>4</td>
+<td>1110000</td>
+<td>1000</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0000101</td>
+<td>2</td>
+<td>0100101</td>
+<td>0101</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0001010</td>
+<td>2</td>
+<td>0101010</td>
+<td>0010</td>
+<td>1</td>
+<td>P</td>
+</tr>
+<tr>
+<td>0000001</td>
+<td>7</td>
+<td>0000000</td>
+<td>0000</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0011101</td>
+<td>5</td>
+<td>0011001</td>
+<td>1001</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1001011</td>
+<td>4</td>
+<td>1000011</td>
+<td>0011</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1101100</td>
+<td>2</td>
+<td>1001100</td>
+<td>0100</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0001001</td>
+<td>3</td>
+<td>0011001</td>
+<td>1001</td>
+<td>1</td>
+<td>P</td>
+</tr>
+<tr>
+<td>1110010</td>
+<td>6</td>
+<td>1110000</td>
+<td>1000</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0110101</td>
+<td>3</td>
+<td>0100101</td>
+<td>0101</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1111100</td>
+<td>1</td>
+<td>0111100</td>
+<td>1100</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>1011100</td>
+<td>3</td>
+<td>1001100</td>
+<td>0100</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0101000</td>
+<td>6</td>
+<td>0101010</td>
+<td>0010</td>
+<td>1</td>
+<td>R</td>
+</tr>
+<tr>
+<td>0010111</td>
+<td>7</td>
+<td>0010110</td>
+<td>1110</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0101011</td>
+<td>7</td>
+<td>0101010</td>
+<td>0010</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0011000</td>
+<td>7</td>
+<td>0011001</td>
+<td>1001</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>1101010</td>
+<td>1</td>
+<td>0101010</td>
+<td>0010</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0000010</td>
+<td>6</td>
+<td>0000000</td>
+<td>0000</td>
+<td>0</td>
+<td>O</td>
+</tr>
+<tr>
+<td>1010000</td>
+<td>5</td>
+<td>1110000</td>
+<td>1000</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0010010</td>
+<td>5</td>
+<td>0010110</td>
+<td>1110</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0001001</td>
+<td>7</td>
+<td>0011001</td>
+<td>1001</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>1000100</td>
+<td>4</td>
+<td>1001100</td>
+<td>0100</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>1011100</td>
+<td>3</td>
+<td>1001100</td>
+<td>0100</td>
+<td>0</td>
+<td>O</td>
+</tr>
+<tr>
+<td>1101000</td>
+<td>7</td>
+<td>1101001</td>
+<td>0001</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0001100</td>
+<td>1</td>
+<td>1001100</td>
+<td>0100</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0101000</td>
+<td>6</td>
+<td>0101010</td>
+<td>0010</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0000110</td>
+<td>3</td>
+<td>0010110</td>
+<td>1110</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0011011</td>
+<td>6</td>
+<td>0011001</td>
+<td>1001</td>
+<td>0</td>
+<td>F</td>
+</tr>
+<tr>
+<td>1110101</td>
+<td>2</td>
+<td>1010101</td>
+<td>1101</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>0101100</td>
+<td>3</td>
+<td>0111100</td>
+<td>1100</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0110010</td>
+<td>7</td>
+<td>0110011</td>
+<td>1011</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>0101110</td>
+<td>7</td>
+<td>0101010</td>
+<td>0010</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Author's Notes</h2>
+<p>Thanks goes to Jonathan who initially gave me the idea of using error-correcting codes for this puzzle!</p>
+<p>I spent a long time playing around with different ideas on how to extract appropriately, before I landed on my final answer to the question &ndash; why not <em>all</em> of them? And from there, the puzzle wrote itself! The inclusion of a binary determination logic puzzle was natural as a means of giving solvers the required bits. The logic puzzle is not very hard, and there certainly are many solve paths that will result in the correct solution, which I did not mind since the primary point of the puzzle was not the logic portion anyway.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.com/solution/shallow-waters by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 07:58:41 GMT -->
+</html>
